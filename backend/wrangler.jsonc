@@ -1,0 +1,20 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-fullstack-backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-06",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mydb",
+      "database_id": "8de804b4-183c-4021-8e16-eb7bdcbd98fb"
+    }
+  ]
+}
